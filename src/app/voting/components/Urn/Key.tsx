@@ -30,8 +30,7 @@ export function Key({
 
   function handleKeyPress() {
     new Audio(
-      `/audios/${
-        value === 'Confirma' && !state.canPressKey ? 'confirm' : 'key'
+      `/audios/${value === 'Confirma' && !state.canPressKey ? 'inter' : 'key'
       }.wav`
     ).play()
 
